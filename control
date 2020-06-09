@@ -1,0 +1,10 @@
+Package: com.zunda.changekeysound
+Name: ChangeKeySound
+Depends: mobilesubstrate, ws.hbang.common, preferenceloader
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Change Keyboard Sound!!
+Maintainer: zunda <zunda.pixel@gmail.com>
+Author: zunda <zunda.pixel@gmail.com>
+Section: Tweaks
+Icon: http://repo.kritanta.me/icon/HomePlus.png
