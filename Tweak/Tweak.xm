@@ -6,7 +6,6 @@ HBPreferences *preferences;
 // 設定アプリから値をセットするもの
 bool enabled				= false;
 bool isCustomSound			= false;
-//CGFloat volume				= 1.0;
 NSString *selectedPreset	= @"";
 NSString *customSoundName	= @"";
 
@@ -69,7 +68,6 @@ void loadPrefs() {
 	[preferences registerBool:&enabled default:NO forKey:@"enabled"];
 	[preferences registerBool:&isCustomSound default:NO forKey:@"isCustomSound"];
 	[preferences registerObject:&selectedPreset default:@"0" forKey:@"selectedSound"];
-	//[preferences registerFloat:&volume default:1.0 forKey:@"volume"];
 	[preferences registerObject:&customSoundName default:@"" forKey:@"customSoundName"];
 }
 
