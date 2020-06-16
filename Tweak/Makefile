@@ -1,10 +1,4 @@
-TARGET = iphone:clang::12.0
-
 include $(THEOS)/makefiles/common.mk
-
-ARCHS = arm64 arm64e
-
-TWEAK_NAME = ChangeKeySound
 
 $(TWEAK_NAME)_FILES = $(wildcard *.xm)
 $(TWEAK_NAME)_CFLAGS = -fobjc-arc

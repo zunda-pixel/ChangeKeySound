@@ -1,9 +1,4 @@
-export TARGET = iphone:clang:12.1:11.0
 include $(THEOS)/makefiles/common.mk
-
-ARCHS = arm64 arm64e
-
-BUNDLE_NAME = ChangeKeySoundPreferences
 
 $(BUNDLE_NAME)_FILES = $(wildcard *.m)
 $(BUNDLE_NAME)_INSTALL_PATH = /Library/PreferenceBundles

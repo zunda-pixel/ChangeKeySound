@@ -1,23 +1,15 @@
-// Import the framework which has the AVAudioPlayer class
 #import <AVFoundation/AVFoundation.h>
 #import "Tweak.h"
 
 HBPreferences *preferences;
 
-NSString *selectedPreset = @"";
-bool enabled = false;
-bool isCustomSound = false;
-CGFloat volume = 1.0;
-NSString *customSoundName = @"";
+// 設定アプリから値をセットするもの
+bool enabled				= false;
+bool isCustomSound			= false;
+CGFloat volume				= 1.0;
+NSString *selectedPreset	= @"";
+NSString *customSoundName	= @"";
 
-// デバッグ用のアラート関数
-void alertLog(NSString *text){
-	UIViewController *view = [UIApplication sharedApplication].keyWindow.rootViewController;
-	while (view.presentedViewController != nil && !view.presentedViewController.isBeingDismissed) { view = view.presentedViewController;}
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Log" message:text preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Dismiss" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {}]];
-    [view presentViewController:alertController animated:YES completion:nil];
-}
 
 @interface UIKeyboardLayoutStar : UIView
 @property (nonatomic, retain) AVAudioPlayer* player;
@@ -30,8 +22,8 @@ void alertLog(NSString *text){
 %property (nonatomic, retain) AVAudioPlayer* player;
 
 -(instancetype)initWithFrame:(CGRect)frame {
-    if ((self = %orig)) {
-		// Add a UITapGestureRecognizer to the keyboard layout and do not let it block touches in the view
+    if (self == %orig) {
+		// キーボードのタッチを防がないために新たなUITapGestureRecognizerを追加
 		UITapGestureRecognizer* gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onKeyboardTouch:)];
         gestureRecognizer.cancelsTouchesInView = NO;
         [self addGestureRecognizer:gestureRecognizer];
@@ -51,8 +43,8 @@ void alertLog(NSString *text){
 			selectedSoundName = files[[selectedPreset intValue]];
 		}
 		
-
-		NSURL* fileURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@", path, selectedSoundName]];
+		NSString* fullPath = [NSString stringWithFormat:@"%@%@", path, selectedSoundName];
+		NSURL* fileURL = [NSURL fileURLWithPath:fullPath];
 
 		self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
 		self.player.volume = volume;
@@ -67,8 +59,8 @@ void alertLog(NSString *text){
 	[self.player prepareToPlay];
 	[self.player play];    
 }
-
 %end
+
 %end
 
 

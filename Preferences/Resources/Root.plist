@@ -6,6 +6,12 @@
 	<array>
 		<dict>
 			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Settings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
 			<true/>
@@ -70,11 +76,19 @@
     	</dict>
 		<dict>
 			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Volume</string>
+		</dict>
+		<dict>
+			<key>cell</key>
 			<string>PSSliderCell</string>
 			<key>default</key>
 			<string>1.0</string>
 			<key>defaults</key>
 			<string>com.zunda.changekeysound</string>
+			<key>label</key>
+			<string>Volume</string>
 			<key>isSegmented</key>
 			<false/>
 			<key>key</key>
@@ -92,6 +106,8 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
+			<string>CustomSound</string>
+			<key>footerText</key>
 			<string>PLACE_YOUR_CUSTOM_SOUND</string>
 		</dict>
 		<dict>
@@ -124,7 +140,9 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string></string>
+			<string>Other</string>
+			<key>footerText</key>
+			<string>©2020 zunda</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -155,13 +173,6 @@
 			<string>Source Code</string>
 			<key>icon</key>
 			<string>GitHub</string>
-		</dict>
-
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>©2020 zunda</string>
 		</dict>
 	</array>
 	<key>title</key>
