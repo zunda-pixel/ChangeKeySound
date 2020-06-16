@@ -12,7 +12,7 @@
 }
 
 - (void)sourceLink {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/zunda_pixel/Choicy"] options:@{} completionHandler:nil];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/zunda-pixel/ChangeKeySound"] options:@{} completionHandler:nil];
 }
 
 - (void)respring {
