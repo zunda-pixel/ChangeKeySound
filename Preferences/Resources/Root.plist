@@ -146,6 +146,38 @@
 			<key>icon</key>
 			<string>GitHub</string>
 		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Credit</string>
+			<key>footerText</key>
+			<string>©2020 zunda</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>Tr1Fecta</string>
+			<key>user</key>
+			<string>FectaTr1</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>Cameren Roberts</string>
+			<key>user</key>
+			<string>1D0nt3venKnow</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>steckler</string>
+			<key>user</key>
+			<string>joestck</string>
+		</dict>
 	</array>
 	<key>title</key>
 	<string>ChangeKeySound</string>
