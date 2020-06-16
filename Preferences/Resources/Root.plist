@@ -78,34 +78,6 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>Volume</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSliderCell</string>
-			<key>default</key>
-			<string>1.0</string>
-			<key>defaults</key>
-			<string>com.zunda.changekeysound</string>
-			<key>label</key>
-			<string>Volume</string>
-			<key>isSegmented</key>
-			<false/>
-			<key>key</key>
-			<string>volume</string>
-			<key>max</key>
-			<string>1.0</string>
-			<key>min</key>
-			<string>0.0</string>
-			<key>showValue</key>
-			<true/>
-			<key>PostNotification</key>
-			<string>com.zunda.changekeysound/ReloadPrefs</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
 			<string>CustomSound</string>
 			<key>footerText</key>
 			<string>PLACE_YOUR_CUSTOM_SOUND</string>
