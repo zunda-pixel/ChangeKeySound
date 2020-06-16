@@ -3,7 +3,7 @@ Change Keyboard Sound
 
 ## Package
 [Packix](https://repo.packix.com/package/com.zunda.changekeysound/)
-<blockquote class="twitter-tweet"><a href="https://repo.packix.com/package/com.zunda.changekeysound/"></blockquote>
+<blockquote><a href="https://repo.packix.com/package/com.zunda.changekeysound/"></blockquote>
   
   
 ## TODO
