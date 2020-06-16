@@ -3,6 +3,6 @@ Change Keyboard Sound
 
 ## Package
 [Packix](https://repo.packix.com/package/com.zunda.changekeysound/)
-[https://repo.packix.com/package/com.zunda.changekeysound/]
+<blockquote class="twitter-tweet"><a href="https://repo.packix.com/package/com.zunda.changekeysound/"></blockquote>
 ## TODO
 - 元のキーボードの音を消す (最悪音量を設定できないようにする)
