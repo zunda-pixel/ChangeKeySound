@@ -1,5 +1,5 @@
 #import <AVFoundation/AVFoundation.h>
-#import "Tweak.h"
+#import <Cephei/HBPreferences.h>
 
 HBPreferences *preferences;
 
