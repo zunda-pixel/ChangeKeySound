@@ -4,8 +4,8 @@
 HBPreferences *preferences;
 
 // 設定アプリから値をセットするもの
-bool enabled				= false;
-bool isCustomSound			= false;
+bool enabled			= false;
+bool isCustomSound		= false;
 NSString *selectedPreset	= @"";
 NSString *customSoundName	= @"";
 
@@ -36,9 +36,9 @@ NSString *customSoundName	= @"";
 		}
 		else{
 			path = @"/Library/Application Support/ChangeKeySound/";
-			NSError *error=nil;
-			NSFileManager *filemanager = [NSFileManager defaultManager];
-			NSArray *files = [filemanager contentsOfDirectoryAtPath:path error:&error];
+			NSError *error	= nil;
+			NSFileManager* filemanager = [NSFileManager defaultManager];
+			NSArray* files = [filemanager contentsOfDirectoryAtPath:path error:&error];
 			selectedSoundName = files[[selectedPreset intValue]];
 		}
 		
